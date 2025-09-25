@@ -7,7 +7,7 @@ pipeline {
                 // Define Docker Hub credentials ID
                 DOCKERHUB_CREDENTIALS_ID = 'DockerHub'
                 // Define Docker Hub repository name
-                DOCKERHUB_REPO = 'hatrik/otpweek6'
+                DOCKERHUB_REPO = 'hatrik/temperatureconverter'
                 // Define Docker image tag
                 DOCKER_IMAGE_TAG = 'latest'
     }
@@ -20,7 +20,7 @@ pipeline {
         {
             steps
             {
-                git branch:"master", url:'https://github.com/Skogbergp/OTPWeek6.git'
+                git branch:"main", url:'https://github.com/Skogbergp/OTPWeek6.git'
             }
         }
         stage('Build')
